@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75B651871E896AC3006B14F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B651861E896AC3006B14F5 /* AppDelegate.swift */; };
+		75B651891E896AC3006B14F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B651881E896AC3006B14F5 /* ViewController.swift */; };
+		75B6518C1E896AC3006B14F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B6518A1E896AC3006B14F5 /* Main.storyboard */; };
+		75B6518F1E896AC3006B14F5 /* Cookery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75B6518D1E896AC3006B14F5 /* Cookery.xcdatamodeld */; };
+		75B651911E896AC3006B14F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B651901E896AC3006B14F5 /* Assets.xcassets */; };
+		75B651941E896AC3006B14F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B651921E896AC3006B14F5 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		75B651831E896AC3006B14F5 /* Cookery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B651861E896AC3006B14F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75B651881E896AC3006B14F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75B6518B1E896AC3006B14F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75B6518E1E896AC3006B14F5 /* Cookery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cookery.xcdatamodel; sourceTree = "<group>"; };
+		75B651901E896AC3006B14F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75B651931E896AC3006B14F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75B651951E896AC3006B14F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75B651801E896AC3006B14F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75B6517A1E896AC3006B14F5 = {
+			isa = PBXGroup;
+			children = (
+				75B651851E896AC3006B14F5 /* Cookery */,
+				75B651841E896AC3006B14F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75B651841E896AC3006B14F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75B651831E896AC3006B14F5 /* Cookery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75B651851E896AC3006B14F5 /* Cookery */ = {
+			isa = PBXGroup;
+			children = (
+				75B651861E896AC3006B14F5 /* AppDelegate.swift */,
+				75B651881E896AC3006B14F5 /* ViewController.swift */,
+				75B6518A1E896AC3006B14F5 /* Main.storyboard */,
+				75B651901E896AC3006B14F5 /* Assets.xcassets */,
+				75B651921E896AC3006B14F5 /* LaunchScreen.storyboard */,
+				75B651951E896AC3006B14F5 /* Info.plist */,
+				75B6518D1E896AC3006B14F5 /* Cookery.xcdatamodeld */,
+			);
+			path = Cookery;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75B651821E896AC3006B14F5 /* Cookery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75B651981E896AC3006B14F5 /* Build configuration list for PBXNativeTarget "Cookery" */;
+			buildPhases = (
+				75B6517F1E896AC3006B14F5 /* Sources */,
+				75B651801E896AC3006B14F5 /* Frameworks */,
+				75B651811E896AC3006B14F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cookery;
+			productName = Cookery;
+			productReference = 75B651831E896AC3006B14F5 /* Cookery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75B6517B1E896AC3006B14F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Nicole Crawford";
+				TargetAttributes = {
+					75B651821E896AC3006B14F5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N23SBH6CJ6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 75B6517E1E896AC3006B14F5 /* Build configuration list for PBXProject "Cookery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75B6517A1E896AC3006B14F5;
+			productRefGroup = 75B651841E896AC3006B14F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75B651821E896AC3006B14F5 /* Cookery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75B651811E896AC3006B14F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B651941E896AC3006B14F5 /* LaunchScreen.storyboard in Resources */,
+				75B651911E896AC3006B14F5 /* Assets.xcassets in Resources */,
+				75B6518C1E896AC3006B14F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75B6517F1E896AC3006B14F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B651891E896AC3006B14F5 /* ViewController.swift in Sources */,
+				75B6518F1E896AC3006B14F5 /* Cookery.xcdatamodeld in Sources */,
+				75B651871E896AC3006B14F5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75B6518A1E896AC3006B14F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B6518B1E896AC3006B14F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75B651921E896AC3006B14F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B651931E896AC3006B14F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75B651961E896AC3006B14F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75B651971E896AC3006B14F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75B651991E896AC3006B14F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N23SBH6CJ6;
+				INFOPLIST_FILE = Cookery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs193p.nicolecr.Cookery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		75B6519A1E896AC3006B14F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N23SBH6CJ6;
+				INFOPLIST_FILE = Cookery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs193p.nicolecr.Cookery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75B6517E1E896AC3006B14F5 /* Build configuration list for PBXProject "Cookery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B651961E896AC3006B14F5 /* Debug */,
+				75B651971E896AC3006B14F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75B651981E896AC3006B14F5 /* Build configuration list for PBXNativeTarget "Cookery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B651991E896AC3006B14F5 /* Debug */,
+				75B6519A1E896AC3006B14F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		75B6518D1E896AC3006B14F5 /* Cookery.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				75B6518E1E896AC3006B14F5 /* Cookery.xcdatamodel */,
+			);
+			currentVersion = 75B6518E1E896AC3006B14F5 /* Cookery.xcdatamodel */;
+			path = Cookery.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 75B6517B1E896AC3006B14F5 /* Project object */;
+}
