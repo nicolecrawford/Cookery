@@ -2,21 +2,63 @@
 //  AppDelegate.swift
 //  Cookery
 //
-//  Created by Nicole Crawford on 3/27/17.
+//  Created by Nicole Crawford on 2/27/17.
 //  Copyright © 2017 Nicole Crawford. All rights reserved.
 //
+// Notifications based off of https://useyourloaf.com/blog/local-notifications-with-ios-10/
 
-import UIKit
 import CoreData
+import UIKit
+import MapKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    lazy var cache: NSCache<AnyObject, AnyObject> = NSCache()
+    
+    func scheduleNotification(forMeal meal: Meal) {
+        let calendar = Calendar(identifier: .gregorian)
+        var components = calendar.dateComponents([.year,.month,.day,.hour,.minute,], from: meal.date as! Date)
+        components.second = 0
 
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 30, repeats: false)
+        let notificationContent = UNMutableNotificationContent()
+        notificationContent.title = "Meal Reminder"
+        notificationContent.body = "Time to cook \(meal.name!)!"
+        notificationContent.sound = UNNotificationSound.default()
+        
+        let request = UNNotificationRequest(identifier: "\(meal.name!)Reminder", content: notificationContent, trigger: trigger)
+        //UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        UNUserNotificationCenter.current().add(request) { error in
+            if error != nil { print("Couldn't add request: \(error!)") }
+        }
+    }
+    
+    func scheduleNotification(in region: CLRegion) {
+        let trigger = UNLocationNotificationTrigger(region: region, repeats: true)
+        let notificationContent = UNMutableNotificationContent()
+        notificationContent.title = "Groceries Reminder"
+        notificationContent.body = "Don't forget to buy ingredients for your next meal!"
+        notificationContent.sound = UNNotificationSound.default()
+        
+        let request = UNNotificationRequest(identifier: "locationReminder", content: notificationContent, trigger: trigger)
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["locationReminder"])
+        UNUserNotificationCenter.current().add(request) { error in
+            if error != nil { print("Couldn't add request: \(error!)") }
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) {
+            (accepted, error) in
+            if !accepted { print(error ?? "No access to notifications.") }
+        }
         return true
     }
 
